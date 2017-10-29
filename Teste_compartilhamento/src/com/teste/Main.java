@@ -3,7 +3,9 @@ package com.teste;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		// Mostrando o que é um arquivo versionado e suas vantagens.
+		System.out.println("Este é um print ou write do JS");
 
 	}
 
