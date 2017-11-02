@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta charset="utf-8">	
+</head>
+ <script>
+
+	// entrada: opniao e idade
+
+	// Pessoa: idade e opniao
+
+
+	// proc: 
+
+	// saida: media da idade, total pessoas e porcentagem de pessoas que responderam bom 
+   
+	function pularLinha(quantidade=1){
+		for (var contador = 1; contador <= quantidade; contador ++){
+			document.write("<br \>");
+		}
+	}
+
+	class Pessoa {
+		constructor (idade, opniao){
+			this.idade = idade;
+			this.opniao = opniao;
+		}
+
+		toString(){
+			return "opniao: " + this.opniao + " Idade: " + this.idade;
+		}
+	}
+
+	
+	var somaTotal = 0;
+	var totalRespOtimo = 0;
+	var totalRespBom = 0;
+	var totalRespRegular = 0;
+	var idade, opniao;
+	for(var contador = 0; contador < 2; contador ++){
+		idade = prompt("Digite idade: ");
+		opniao = prompt("Digite opniao: ");
+		if (opniao == "bom"){
+			totalRespBom ++;
+		} else if (opniao == "otimo"){
+			somaTotal += parseInt(idade);
+			totalRespOtimo ++;
+		} else if (opniao == "regular"){
+			totalRespRegular ++;
+		}
+	}
+
+	document.write("media idade responderam otimo: " + (somaTotal/totalRespOtimo));
+	pularLinha();
+	document.write("quantidade que responderam regular: " + (totalRespRegular));
+	pularLinha();
+	document.write("Porcentagem que responderam bom: " + (totalRespBom/2) * 100 + "%");
+	pularLinha();
+
+ </script>
+</html>
