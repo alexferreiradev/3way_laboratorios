@@ -1,0 +1,46 @@
+<html>
+<head>
+	<meta charset="utf-8">	
+</head>
+ <script>
+   
+	function pularLinha(quantidade=1){
+		if (quantidade > 10){
+			return ;
+		}
+
+		quantidade = 5;
+		for (contador = 1; contador <= quantidade; contador ++){
+			document.write("<br \>");
+		}
+
+		return quantidade
+	}
+
+	class Carro {
+		constructor (marca, modelo){
+			this.marca = marca;
+			this.modelo = modelo;
+		}
+
+		ligar(tentativas = 1){
+			document.write("Carro " + this.marca + " esta ligando...");
+		}
+	}
+
+	var bmw = new Carro("BMW", "X6");
+	bmw.marca
+	bmw.ligar();
+	var gol = new Carro("Volks", "Gol");
+
+	document.write("Marca do obj: "+ bmw.marca);
+	var mes = 10;
+	var retorno = pularLinha(mes);
+	gol.ligar();
+
+	bmw + gol
+
+
+
+ </script>
+</html>
