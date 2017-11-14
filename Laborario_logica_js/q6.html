@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+        // codigo da questao 6 do lab 3
+
+        function pularLinha(quantidade = 1){
+        	for (var i = 0; i < quantidade; i++) {
+        		document.write("<br/>");
+        	}
+        }
+
+        function criaEspectadores(){
+        	var totalEspectadores = -1;
+	        while (totalEspectadores < 0){
+	        	totalEspectadores = parseInt(prompt("Informe o total de espectadores: "));
+	        	if (totalEspectadores < 0){
+	        		alert("Digite um total positivo ou maior que 0!");
+	        	}
+	        }
+
+	        if (isNaN(totalEspectadores)){
+	        	document.write("Numero inválido de espectadores foi inserido: " + totalEspectadores);
+	        	pularLinha();
+	        	return null;
+	        }
+
+	        var espectadores = new Array(totalEspectadores);
+	        for (var i = 0; i < espectadores.length; i++) {
+	        	var idade = parseInt(prompt("Digite a idade:"));
+	        	var opniao = parseInt(prompt("Digite a opniao: 1 - regular, 2 - bom, 3- otimo:"));
+	        	espectadores[i] = new Pessoa(idade, opniao);
+	        }
+
+	        return espectadores;
+        }
+
+        function geraResultado(espectadores){
+        	if (espectadores == null || espectadores.length == 0){
+        		return new Resultado();
+        	}
+
+        	var totalRegular = 0;
+	        var totalBom = 0;
+	        var totalOtimo = 0;
+	        var somaIdadesOtimo = 0;
+	        for (var i = 0; i < espectadores.length; i++) {
+	        	var espectador = espectadores[i];
+	        	switch(espectador.opniao){
+	        		case 1:
+	        			totalRegular ++;
+	        			console.debug("opniao = regular");
+	        			break;
+	        		case 2:
+	        			totalBom ++;
+	        			console.debug("opniao = bom");
+	        			break;
+	        		case 3:
+	        			totalOtimo ++;
+	        			somaIdadesOtimo += espectador.idade;
+	        			console.debug("opniao = otimo");
+	        			break;
+	        		default:
+	        			console.debug("opniao invalida");
+	        			break;
+	        	}
+	        }
+
+	       	porcentagemBom = totalBom / espectadores.length;
+	        mediaOtimo = somaIdadesOtimo / totalOtimo;
+
+	        return new Resultado(mediaOtimo, totalRegular, porcentagemBom);
+        }
+
+        class Resultado{
+        	constructor(mediaOtimo = 0, totalRegular = 0, porcentagemBom = 0.0){
+        		this.mediaOtimo = mediaOtimo;
+        		this.totalRegular = totalRegular;
+        		this.porcentagemBom = porcentagemBom;
+        	}
+
+        	getMediaOtimo(){
+        		if (isNaN(this.mediaOtimo)){
+        			return 0;      			
+        		}
+
+        		return this.mediaOtimo;
+        	}
+
+        	getPorcentagemBom(){
+        		if (isNaN(this.porcentagemBom)){
+        			return 0.0;
+        		}
+
+        		return this.porcentagemBom;
+        	}
+        }
+
+        class Pessoa{
+            constructor(idade, opniao){
+            	this.idade = idade;
+            	this.opniao = opniao;                
+            }
+        }
+
+        // Somente uma simplificacao, para vcs entenderem o poder de funcoes
+        var espectadores = criaEspectadores(); 
+
+        // somente uma simplificacao, para vcs entenderem o poder de objetos
+        var resultado = geraResultado(espectadores);
+
+        document.write("Média das idades das pessoas que responderam ótimo: " + resultado.getMediaOtimo());
+        pularLinha(2);
+        document.write("Quantidade de pessoas que responderam regular: " + resultado.totalRegular);
+        pularLinha(2);
+        document.write("Porcentagem de pessoas que responderam bom entre todos os espectadores analisados: " + (resultado.getPorcentagemBom()*100) + "%");
+        pularLinha(2);
+    </script>
+
+</body>
+</html>
