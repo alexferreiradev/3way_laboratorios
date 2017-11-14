@@ -1,6 +1,6 @@
 package curso.oo.lab05.ex2;
 
-public class MetodosInstanciaEEstatico {
+public class MetodosInstanciaEEstaticoStaticError {
 
 	public static void main(String[] args) {
 
@@ -10,9 +10,9 @@ public class MetodosInstanciaEEstatico {
 
 		// Invoca o método de instância charAt()
 		// através das instâncias da classe String
-		char x = strInst1.charAt(2);
-		char y = strInst2.charAt(1);
-		char z = strInst2.charAt(0);
+		char x = String.charAt(2);
+		char y = String.charAt(1);
+		char z = String.charAt(0);
 
 		System.out.println("O 3.o caracter da strInst1 = " + x);
 		System.out.println("O 2.o caracter da strInst2 = " + y);

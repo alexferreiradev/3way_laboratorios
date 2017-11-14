@@ -17,10 +17,6 @@ public class ClasseEObjeto {
 		String strObjeto2 = "Este objeto é uma instância da classe String";
 		System.out.println("estado da instância de strObjeto2 = " + strObjeto2);
 
-		// cria uma instância de objeto da classe Integer
-		Integer intObjeto1 = new Integer(20);
-		System.out.println("estado da instância de intObjeto1 = " + intObjeto1);
-
 	}
 
 }

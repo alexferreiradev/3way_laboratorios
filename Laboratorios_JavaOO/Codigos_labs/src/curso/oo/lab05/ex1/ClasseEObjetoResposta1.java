@@ -1,6 +1,6 @@
 package curso.oo.lab05.ex1;
 
-public class ClasseEObjeto2 {
+public class ClasseEObjetoResposta1 {
 
 	public static void main(String[] args) {
 
@@ -16,9 +16,12 @@ public class ClasseEObjeto2 {
 		// string e criada uma única instância desta string
 		String strObjeto2 = "Este objeto é uma instância da classe String";
 		System.out.println("estado da instância de strObjeto2 = " + strObjeto2);
-		
-		String strObjeto3 = "Eu sou outra instância da classe String";
-		System.out.println("estado da instância de strObjeto3 = " + strObjeto3);
+
+		// todo 1 - altere para criar uma nova String
+		String strObjeto3 = ;
+
+		// todo 2 - altere para mostrar o estado da instância de String nova
+		System.out.println("estado da instância de strObjeto3 = ");
 
 	}
 
