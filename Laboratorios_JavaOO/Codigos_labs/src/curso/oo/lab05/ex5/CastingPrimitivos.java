@@ -4,21 +4,27 @@ public class CastingPrimitivos {
 
 	public static void main(String[] args) {
 
+		// casting implicito exemplo 1
+		int numInt = 10;
+		double numDouble = numInt;
+		System.out.println("int " + numInt + " e implicitamente moldado para double " + numDouble);
+
+		// casting implicito exemplo 2
+		int numInt1 = 3;
+		int numInt2 = 2;
+		double numDouble2 = numInt1 / numInt2;
+		System.out.println("numInt1/numInt2 " + numInt1 / numInt2 + " e implicitamente moldado para " + numDouble2);
+
 		// casting explicito exemplo 1
-		long numLong = 10L;
-		byte numByte = (byte) numLong;
-		System.out.println("long " + numLong + " e explicitamente moldado para byte " + numByte);
+		double valDouble = 10.12;
+		int valInt = (int) valDouble;
+		System.out.println("double " + valDouble + " e explicitamente moldado para int " + valInt);
 
 		// casting explicito exemplo 2
-		float numFloat = 10F;
-		short numShort = (short) numFloat;
-		System.out.println("float " + numFloat + " e explicitamente moldado para short " + numShort);
-
-		// casting explicito exemplo 3
-		int numInt = 10;
-		char numChar = (char) numInt;
-		System.out.println("int " + numInt + " e explicitamente moldado para char " + numChar);
-
+		double x = 10.2;
+		int y = 2;
+		int resultado = (int) ( x / y );
+		System.out.println("x/y " + x / y + " e explicitamente moldado para int " + resultado);
 	}
 
 }

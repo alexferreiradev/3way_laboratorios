@@ -20,11 +20,6 @@ public class PrimitivaParaWrapper {
 		// Converte int primitivo para tipo Integer
 		Integer intObjeto2 = new Integer(intConvertida);
 		System.out.println("Integer intObjeto2 = " + intObjeto2);
-
-		// Converte Long para primitivo long
-		Long classeWrapper = 10L;
-		long tipoPrimitivo = classeWrapper;
-		System.out.println("long primitivo = " + tipoPrimitivo);
 	}
 
 }

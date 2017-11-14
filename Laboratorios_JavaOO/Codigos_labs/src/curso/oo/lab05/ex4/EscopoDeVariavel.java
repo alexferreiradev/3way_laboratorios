@@ -5,7 +5,7 @@ public class EscopoDeVariavel {
 	public static void main(String[] args) {
 
 		int var1 = 10;
-		// var2 agora esta definida em todo escopo do metodo main
+		// var2 agora esta definida em todoo escopo do metodo main
 		int var2 = 15;
 
 		if (var1 < 100) {
