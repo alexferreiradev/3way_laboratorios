@@ -13,8 +13,9 @@ public class Conta {
 	private Date dataAbertura;
 	
 	public Conta() {
-
-		this.dataAbertura = new Date();
+		
+		// todo - segue o pdf antes de alterar, setar a data de abertura com a data atual do sistema 
+		// sera feito depois que fizer o outro todoo
 		
 		System.out.println("Data de abertura da Conta e : " + this.dataAbertura.toString());
 	}
