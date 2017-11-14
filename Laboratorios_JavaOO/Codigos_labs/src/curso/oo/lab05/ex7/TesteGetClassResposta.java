@@ -7,16 +7,15 @@ public class TesteGetClassResposta {
 	public static void main(String[] args) {
 
 		// Cria instância de objeto Date
-		Date dt1 = new Date();
+		// todo - criar instancia da classe Date do java.util.
+		Date dt1 = ;
 
-		// Encontrar informação externa de uma instância de Date
-		// via método getClass(). Note que ele retorna uma instância
-		// de objeto da classe Class
-		Class dt1Class = dt1.getClass();
-		System.out.println("A classe de dt1 e uma instância de " + dt1Class);
+		// todo - mostrar qual é a classe da instancia dt1
+		System.out.println("A classe de dt1 é uma instância de ");
 
 		// O nome da classe da instância de objeto Class.
-		String dt1ClassName = dt1Class.getName();
+		// todo - mostrar o nome da classe do objeto dt1
+		String dt1ClassName = ;
 		System.out.println("Nome da classe e " + dt1ClassName);
 
 	}
