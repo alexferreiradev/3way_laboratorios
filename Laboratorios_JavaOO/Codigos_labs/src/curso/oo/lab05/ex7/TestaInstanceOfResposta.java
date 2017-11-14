@@ -1,6 +1,6 @@
 package curso.oo.lab05.ex7;
 
-public class TestaInstanceOf {
+public class TestaInstanceOfResposta {
 
 	public static void main(String[] args) {
 
