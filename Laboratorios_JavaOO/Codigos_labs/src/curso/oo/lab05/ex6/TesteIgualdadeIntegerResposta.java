@@ -1,6 +1,6 @@
 package curso.oo.lab05.ex6;
 
-public class TesteIgualdadeInteger {
+public class TesteIgualdadeIntegerResposta {
 
 	public static void main(String[] args) {
 
