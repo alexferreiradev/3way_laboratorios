@@ -17,6 +17,7 @@ public class TestaContaResposta {
 		System.out.println("Digite o numero da conta");
 		int numeroConta = c.nextInt();
 		
+		// todo - observe que vc tem uma variavel de servicos de contas
 		// Cria uma instância de ContaService onde está presente as operações para Objeto Conta
 		ContaService operacoesConta = new ContaService();
  
@@ -63,8 +64,8 @@ public class TestaContaResposta {
 		// todo - mostre o valor do Saldo da conta3
 		System.out.println("Saldo da Conta 3 :");
 		
+		// todo - utilize os metodos de operacoesConta para transferir 100.23 da conta 2 para conta 3 
 		System.out.println("Transferir 100.23 de conta 2 para conta3 ");
-		operacoesConta.transferir(conta2, 100.23, conta3);
 		
 		System.out.println("Saldo da Conta 1 :" + conta1.getSaldo());
 		System.out.println("Saldo da Conta 2 :" + conta2.getSaldo());
