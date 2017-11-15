@@ -2,7 +2,6 @@ package curso.oo.lab06.ex2;
 
 public class ExemploVariavelEstatica {
 
-	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 
 		// Acessando variáveis estaticas da classe UtilData
@@ -34,8 +33,8 @@ public class ExemploVariavelEstatica {
 		System.out.println("instancia 1 Mudou Dia do Mes " + UtilData.DiaDoMes);
 		System.out.println("instancia 2 Mudou Dia do mês " + data2.DiaDoMes);
 		
-		System.out.println(UtilData.JANEIRO);
-		System.out.println(UtilData.FEVEREIRO);
+		// todo - mostre os valores de Janeiro e Fevereiro, dica, use sysou + UtilData 
+		
 	}
 
 }

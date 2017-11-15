@@ -26,15 +26,19 @@ public class UtilData {
 	// DiaDaSemana que representa Sábado
 	static int SÁBADO = Calendar.SATURDAY;
 
+	// todo - alterar para se torna estatico
 	// MesDoAno que representa Janeiro
-	static int JANEIRO = Calendar.JANUARY;
+	int JANEIRO = Calendar.JANUARY;
 
+	// todo - alterar para se torna estatico
 	// MesDoAno que representa Fevereiro
-	static int FEVEREIRO = Calendar.FEBRUARY;
+	int FEVEREIRO = Calendar.FEBRUARY;
 
+	// todo - alterar para se torna estatico
 	// MesDoAno que representa Março
 	int MARÇO = Calendar.MARCH;
 
+	// todo - alterar para se torna estatico
 	// MesDoAno que representa Abril
 	int ABRIL = Calendar.APRIL;
 
