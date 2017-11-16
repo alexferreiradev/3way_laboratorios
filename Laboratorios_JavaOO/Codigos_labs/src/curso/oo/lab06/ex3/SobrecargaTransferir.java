@@ -37,16 +37,18 @@ public class SobrecargaTransferir {
 
 		System.out.println("Transferir 100.00 de conta 2 para conta3 ");
 
+		//todo - use o metodo transferir para transferir 100 reais da conta 2 para 3
 		// tranferindo valor de conta1 para conta2 utilizando transferencia sem limite
-		operacoesConta.transferir(conta2, 100.00, conta3);
+		
 		System.out.println("Saldo da Conta 1:" + conta1.getSaldo());
 		System.out.println("Saldo da Conta 2:" + conta2.getSaldo());
 		System.out.println("Saldo da Conta 3:" + conta3.getSaldo());
 
 		System.out.println("Transferir 100.23 de conta 2 para conta3 ");
 
+		//todo - transfira agora, usando o metodo com limite, colocando limite de 600 reais
 		// tranferindo valor de conta2 para conta3 utilizando transferencia com limite
-		operacoesConta.transferir(conta2, 100.00, conta3, 600);
+		
 		System.out.println("Saldo da Conta 1:" + conta1.getSaldo());
 		System.out.println("Saldo da Conta 2:" + conta2.getSaldo());
 		System.out.println("Saldo da Conta 3:" + conta3.getSaldo());

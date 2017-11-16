@@ -13,19 +13,13 @@ public class Conta {
 	private Date dataAbertura;
 
 	public Conta() {
-
 		this.dataAbertura = new Date();
-
 		System.out.println("Data de abertura da Conta e : " + this.dataAbertura.toString());
 	}
 
+	// todo - criar construtor com 2 parametros, dica: lembre do this()
 	// construtor com dois parametros
-	public Conta( String nome, int nconta ) {
-		this();
-		numero = nconta;
-		titular = nome;
-		saldo = 0.0; // Conta em reais e zerada
-	}
+	
 
 	public void depositar(double valor) {
 

@@ -63,9 +63,10 @@ public class UtilData {
 		return new java.text.SimpleDateFormat("dd/MM/yyyy  HH:mm").format(data);
 	}
 
+	// todo - metodo pode precisar de alteracao
 	// método de instância
 	// Formata uma data no formato dd/mm/aaaa hh:mm
-	static String DDMMAAAAHHMM(Date data) {
+	String DDMMAAAAHHMM(Date data) {
 
 		return new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm").format(data);
 	}

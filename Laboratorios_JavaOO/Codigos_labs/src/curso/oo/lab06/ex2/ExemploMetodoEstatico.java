@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class ExemploMetodoEstatico {
 
-	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 
 		Date data = new Date();
@@ -19,6 +18,7 @@ public class ExemploMetodoEstatico {
 		// Metodo de instancia so pode ser invocado por uma instancia
 		System.out.println(idata.DDMMAAAAHHMM(data));
 
+		// todo - leia o pdf e altere a classe UtilData para corrigir
 		// Metodos de instancia nao podem ser invocados diretamente ocorre erro de compilacao
 		UtilData.DDMMAAAAHHMM(data);
 	}
