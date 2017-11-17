@@ -9,9 +9,10 @@ public class TresTiposDeVariaveis {
 	String instanceVariable = "variável de instância";
 
 	public static void main(String[] args) {
-
+		String str = new String("teste");
+		
 		String localVariable = "variável local";
-		System.out.println("Variável estática = " + staticVariable);
+		System.out.println("Variável estática = " + instanciaVariable);
 		System.out.println("Variável de instância = " + TresTiposDeVariaveis.staticVariable);
 		System.out.println("Variável local = " + localVariable);
 

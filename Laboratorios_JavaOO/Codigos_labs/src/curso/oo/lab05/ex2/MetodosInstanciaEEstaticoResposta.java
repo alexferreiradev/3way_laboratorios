@@ -11,9 +11,9 @@ public class MetodosInstanciaEEstaticoResposta {
 		// Invoca o método de instância charAt()
 		// através das instâncias da classe String
         // todo 1 - altere para não utilizar método estático e utilizar método da instância da String
-		char x = String.charAt(2);
-		char y = String.charAt(1);
-		char z = String.charAt(0);
+		char x = strInst1.charAt(2);
+		char y = strInst1.charAt(1);
+		char z = strInst2.charAt(0);
 
 		System.out.println("O 3.o caracter da strInst1 = " + x);
 		System.out.println("O 2.o caracter da strInst2 = " + y);
@@ -37,20 +37,20 @@ public class MetodosInstanciaEEstaticoResposta {
 		System.out.println("valor de ii = " + ii);
 
 		// método endsWith()
-		String str = "Hello";
+		String str = "Hello"; // str é uma instância de String
 		// todo 2 - Analise o que é chamada por metodo de instancia ou estático
 
-        // Estático ?
+        // Estático ? nao, é um método de instância
 		System.out.println( str.endsWith( "slo" ) );
 
 		// método floor()
-        // Instância ?
+        // Instância ? não, método estático
 		System.out.println( Math.floor(3.14));
 
 		// método isDigit()
-        // Estático ?
+        // Estático ? sim, da classe Character
 		System.out.println( "0=" + Character.isDigit('0'));
-		// Instância ?
+		// Instância ? não, é método estático
 		System.out.println( "A=" +Character.isDigit('A'));
 
 	}

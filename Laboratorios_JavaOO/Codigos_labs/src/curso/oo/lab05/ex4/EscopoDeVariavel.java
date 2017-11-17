@@ -6,11 +6,10 @@ public class EscopoDeVariavel {
 
 		int var1 = 10;
 		// var2 agora esta definida em todoo escopo do metodo main
-		int var2 = 15;
-
+		
+		int var2;
 		if (var1 < 100) {
-			// int var2 = 20;
-			var2 = 20;
+			 var2 = 20;
 		} else {
 			// int var2 = 21;
 			var2 = 21;
