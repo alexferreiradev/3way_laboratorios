@@ -12,7 +12,7 @@ public class CastingPrimitivos {
 		// casting implicito exemplo 2
 		int numInt1 = 3;
 		int numInt2 = 2;
-		double numDouble2 = numInt1 / numInt2;
+		double numDouble2 = (numInt1 * 1.0) / numInt2;
 		System.out.println("numInt1/numInt2 " + numInt1 / numInt2 + " e implicitamente moldado para " + numDouble2);
 
 		// casting explicito exemplo 1

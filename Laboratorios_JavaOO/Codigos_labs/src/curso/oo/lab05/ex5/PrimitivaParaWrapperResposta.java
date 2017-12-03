@@ -5,7 +5,7 @@ public class PrimitivaParaWrapperResposta {
 	public static void main(String[] args) {
 
 		// cria uma instância de objeto Integer
-		Integer intObjeto = new Integer(7801);
+		Integer intObjeto = 7801;
 
 		// Converte de Integer para primitivo int usando método intValue()
 		int intPrimitiva = intObjeto.intValue();

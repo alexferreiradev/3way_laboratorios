@@ -19,7 +19,8 @@ public class TestaPassagemReferencia {
 		// Uma vez que um array é do tipo referência,
 		// este argumento e passado
 		// por referência.
-		test(i);
+		int []novoArray = test(i);
+		System.out.println("Novo array: " + Arrays.toString(novoArray));
 
 		// todo 4 - observer que o array foi alterado
 		// imprime o valor de i. Note que o valor de i não muda
@@ -27,16 +28,17 @@ public class TestaPassagemReferencia {
 	}
 
 	// Método estático na classe
-	public static void test(int[] j) {
+	public static int[] test(final int[] j) {
 
+		final int []arrayInterno = {44, 45, 46};
+		
 		System.out.println("inicia método test e j = " + Arrays.toString(j));
 
 		// todo 3 - observe que são alterados posicoes do array
 		// muda valor do parâmetro i
-		j[0] = 33;
-		j[1] = 66;
 
 		System.out.println("termina método test e j = " + Arrays.toString(j));
+		return arrayInterno;
 	}
 
 }

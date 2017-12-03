@@ -27,7 +27,7 @@ public class TesteGetClass {
 		System.out.println("A classe de int1 é uma instância de " + int1Class);
 
 		// O nome da classe da instância de objeto Class.
-		String int1ClassName = int1Class.getName();
+		String int1ClassName = int1Class.getSimpleName();
 		System.out.println("Nome da classe é " + int1ClassName);
 
 	}

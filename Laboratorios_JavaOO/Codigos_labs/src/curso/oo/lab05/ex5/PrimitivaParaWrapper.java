@@ -1,5 +1,9 @@
 package curso.oo.lab05.ex5;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class PrimitivaParaWrapper {
 
 	public static void main(String[] args) {
