@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Banco-Modelo/Banco-Modelo.iml" filepath="$PROJECT_DIR$/../Banco-Modelo/Banco-Modelo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Banco-Servico/Banco-Servico.iml" filepath="$PROJECT_DIR$/../Banco-Servico/Banco-Servico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Banco-SwingView/Banco-SwingView.iml" filepath="$PROJECT_DIR$/../Banco-SwingView/Banco-SwingView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SistemaBanco.iml" filepath="$PROJECT_DIR$/SistemaBanco.iml" />
+    </modules>
+  </component>
+</project>
